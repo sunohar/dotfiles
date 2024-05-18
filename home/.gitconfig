@@ -1,0 +1,13 @@
+[include]
+	path = .gitconfig-personal
+
+# includeIf is reflected only inside a git-repo.
+# So all repo folders inside satyuma will correctly pickup on command "git config --global --include user.name"
+# satyuma folder itself will not pickup correctly it is is initilaized.
+[includeIf "gitdir/i:~/Projects/satyuma/"]
+	path = .gitconfig-satyuma
+
+[init]
+	defaultBranch = main
+[credential "github.com"]
+	useHttpPath = true

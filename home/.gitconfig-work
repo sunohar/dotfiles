@@ -1,0 +1,5 @@
+[user]
+	email = sunil.goothy@tmeic.in
+	name = sunilgoothy
+[credential]
+	helper = store --file ~/.git-credentials-work

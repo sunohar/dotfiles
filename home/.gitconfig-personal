@@ -1,0 +1,5 @@
+[user]
+	email = sunohar@yahoo.co.in
+	name = sunohar
+[credential]
+	helper = store --file ~/.git-credentials-personal

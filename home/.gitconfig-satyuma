@@ -1,0 +1,5 @@
+[user]
+	email = sunil@satyuma.com
+	name = sunil-satyuma
+[credential]
+	helper = store --file ~/.git-credentials-satyuma
