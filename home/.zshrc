@@ -123,3 +123,7 @@ eval "$(pyenv init -)"
 
 # custom aliases
 alias kw=kwrite
+alias dfh="df -h"
+
+# for qemu to run VMs in system mode
+export LIBVIRT_DEFAULT_URI='qemu:///system'
