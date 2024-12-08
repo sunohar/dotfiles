@@ -127,3 +127,6 @@ alias dfh="df -h"
 
 # for qemu to run VMs in system mode
 export LIBVIRT_DEFAULT_URI='qemu:///system'
+
+# To customize prompt, run `p10k configure` or edit ~/dotfiles/home/.p10k.zsh.
+[[ ! -f ~/dotfiles/home/.p10k.zsh ]] || source ~/dotfiles/home/.p10k.zsh
