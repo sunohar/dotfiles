@@ -79,14 +79,16 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 
 #plugins=(git)
-plugins=(git 
-zsh-autosuggestions 
-zsh-syntax-highlighting 
-fast-syntax-highlighting 
-zsh-autocomplete 
-you-should-use 
-zsh-bat 
-zsh-fzf-history-search)
+plugins=(
+git
+zsh-autosuggestions
+zsh-syntax-highlighting
+fast-syntax-highlighting
+zsh-autocomplete
+you-should-use
+zsh-bat
+zsh-fzf-history-search
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -115,6 +117,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# GSM: Make ← and → always move the cursor on the command line
+#(https://github.com/marlonrichert/zsh-autocomplete?tab=readme-ov-file#make--and--always-move-the-cursor-on-the-command-line)
+bindkey -M menuselect  '^[[D' .backward-char  '^[OD' .backward-char
+bindkey -M menuselect  '^[[C'  .forward-char  '^[OC'  .forward-char
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
