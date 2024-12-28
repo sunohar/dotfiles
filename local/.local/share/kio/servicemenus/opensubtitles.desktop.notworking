@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Service
+Icon=text
+NoDisplay=true
+Terminal=true
+Actions=Download
+Encoding=UTF-8
+MimeType=video/avi;video/mpeg;video/mp4;video/ogg;video/quicktime;video/msvideo;video/webm;video/x-matroska;video/x-mpeg;video/x-ms-wmv;video/x-msvideo;video/x-flv;application/ogg;
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+X-KDE-Priority=TopLevel
+;X-KDE-Submenu=Subtitle
+
+[Desktop Action Download]
+Name=Download Subtitles (en)
+Exec=~/lib/OpenSubtitlesDownload/OpenSubtitlesDownload.py --lang=eng "%F"

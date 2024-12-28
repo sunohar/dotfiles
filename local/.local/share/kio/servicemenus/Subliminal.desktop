@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Get Subtitles
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=video/*;
+Actions=getSubtitles
+
+[Desktop Action getSubtitles]
+Name=Get Subtitles
+Icon=plasma
+Exec=konsole --noclose -e /home/sunil/.local/bin/subliminal download --hearing-impaired --verbose %U
