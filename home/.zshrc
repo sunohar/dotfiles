@@ -85,7 +85,7 @@ zsh-autosuggestions
 zsh-syntax-highlighting
 fast-syntax-highlighting
 zsh-autocomplete
-you-should-use
+# you-should-use
 zsh-bat
 zsh-fzf-history-search
 )
